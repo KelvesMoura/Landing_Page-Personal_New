@@ -1,0 +1,39 @@
+@keyframes carousel-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(
+        (
+          -1 *
+            (
+              var(--carousel-total-items) * var(--carousel-item-width-portfolio)
+            ) -
+            ((var(--carousel-total-items) * (var(--carousel-gap))))
+        )
+      )
+    );
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

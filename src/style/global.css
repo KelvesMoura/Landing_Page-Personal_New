@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --start-color: #00ff66;
+  --pro-color: #0ea5e9;
+  --master-color: #ffb800;
+  --black-color: #000;
+  --white-color: #fff;
+  --dark-gray-color: #464a4e;
+  --carousel-gap: 24px; /* Gap para ServiceCards */
+  --carousel-item-width: min(
+    400px,
+    90vw
+  ); /* Evita estourar os Cards no mobile */
+  --right-wall-carousel: linear-gradient(
+    to left,
+    var(--black-color) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0.8) 40%
+  );
+  --left-wall-carousel: linear-gradient(
+    to right,
+    var(--black-color) 0%,
+    rgba(255, 255, 255, 0) 100%,
+    rgba(255, 255, 255, 0.8) 40%
+  );
+  --carousel-item-width-portfolio: 500px; /* Largura do PortfolioCards*/
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-family);
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.rainbow {
+  color: var(--active-color);
+  transition: color 0.6s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.label,
+.label-limitada {
+  display: inline-flex;
+  width: fit-content;
+  background-color: var(--active-color);
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-size: 14px !important;
+  font-weight: 600;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid var(--active-color);
+  border-radius: 20px;
+}
+
+.rights {
+  text-align: center;
+  padding: 10px;
+}
+
+footer .rights p {
+  font-size: min(4vw, 1rem);
+  color: var(--dark-gray-color);
+  letter-spacing: 1px;
+}

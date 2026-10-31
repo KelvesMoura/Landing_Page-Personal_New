@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-view {
+  display: inherit;
+  flex-direction: row;
+  width: clamp(9vw, 90%, 75rem);
+  padding-inline: 20px;
+  align-self: center;
+  gap: 20px;
+  margin: 100px 0;
+}
+
+.hero {
+  flex: 1;
+  min-width: 450px;
+  flex-shrink: 0;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.services {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  max-width: 400px;
+}
+
+.hero p:is(:nth-child(1), :nth-child(2)) {
+  font-size: clamp(2rem, 2.273vw + 20.909px, 3.5rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero p:nth-child(3) {
+  font-size: clamp(1rem, 0.91vw + 10.1px, 1.5rem);
+  line-height: 1.5;
+}

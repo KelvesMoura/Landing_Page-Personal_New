@@ -1,0 +1,123 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: var(--white-color);
+  padding: 5px 20px 30px;
+  border-radius: 10px;
+}
+
+.start span,
+.pro span,
+.master span {
+  display: flex;
+  gap: 2px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+i {
+  font-size: 16px;
+}
+
+.plan-title,
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+}
+
+ul {
+  list-style: none;
+  line-height: 2rem;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.carousel ul li {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.15rem;
+  font-weight: 500;
+  gap: 10px;
+  text-align: left !important;
+}
+
+.carousel ul li i {
+  font-size: 1.25rem;
+}
+
+.deadline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  line-height: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.offer {
+  line-height: 5px;
+  border-radius: 10px;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.plan-value,
+.plan-maintenance-value {
+  color: var(--white-color);
+  text-align: center;
+}
+
+.plan-value {
+  font-size: 1.75rem;
+}
+
+.total-value {
+  font-weight: normal;
+  margin-top: -20px;
+  font-style: italic;
+}
+
+.offer p {
+  font-size: 1.5rem;
+}
+
+.plan-maintenance-value {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.plan-button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  animation: pulse 1s infinite ease-in-out;
+  cursor: pointer;
+}
