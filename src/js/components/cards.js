@@ -17,6 +17,7 @@ function cards() {
       parcel,
       split,
       total,
+      paymentLink,
       montlhy,
     } = item;
 
@@ -50,7 +51,7 @@ function cards() {
     const topics = goal(ul, customers, root(color));
     const offer = price(parcel, split, total, montlhy, colorPlan);
     const time = workingTime(deadline, colorPlan);
-    const cta = hook(colorPlan);
+    const cta = hook(colorPlan, services, paymentLink);
 
     p.appendChild(span);
     card.append(hero, p, topics, offer, time, cta);
@@ -161,7 +162,7 @@ function workingTime(time, color) {
   return line;
 }
 
-function hook(color) {
+function hook(color, services, paymentLink) {
   const b = cElement("button");
 
   b.appendChild(tInput("CONTRATAR AGORA"));
@@ -169,7 +170,10 @@ function hook(color) {
   b.className = "plan-button";
 
   b.addEventListener("click", () => {
-    const url = `${link}${encodeURIComponent(messageCard)}`;
+    const url =
+      services.dataset.link && services.dataset.link !== "false"
+        ? paymentLink
+        : `${link}${encodeURIComponent(messageCard)}`;
 
     window.open(url, "_blank");
   });

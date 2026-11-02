@@ -29,6 +29,7 @@ export const dataCards = [
     deadline: "3 dias",
     parcel: 5,
     total: 797,
+    paymentLink: "https://payment-link-v3.ton.com.br/pl_G0ZDoMNqp2nYdL5UpHGRlabvLB16J8wm",
     get split() {
       return calc(this.total, this.parcel);
     },
@@ -54,6 +55,7 @@ export const dataCards = [
     deadline: "7 dias",
     parcel: 6,
     total: 1499,
+    paymentLink: "https://payment-link-v3.ton.com.br/pl_qGNKERbwLnQ9kPb8sAIrgrXDYjPzoOl3",
     get split() {
       return calc(this.total, this.parcel);
     },
@@ -79,6 +81,7 @@ export const dataCards = [
     deadline: "15 dias",
     parcel: 10,
     total: 2999,
+    paymentLink: "https://payment-link-v3.ton.com.br/pl_5GjVPA7YbEv9Amrtlwhj19NDQweyma1L",
     get split() {
       return calc(this.total, this.parcel);
     },
